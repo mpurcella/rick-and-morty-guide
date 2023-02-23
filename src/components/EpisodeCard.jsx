@@ -7,7 +7,7 @@ const EpisodeCard = ({ url, name, episode }) => {
 	return (
 		<Link
 			to={url}
-			className='relative block rounded-lg border-2 border-transparent bg-black-200 p-20 shadow-lg shadow-black-100/30 outline-none duration-200 ease-out  hover:border-white focus-visible:border-white'
+			className='relative block rounded-lg border-2 border-transparent bg-black-200 p-20 shadow-lg shadow-black-200/20 outline-none duration-200 ease-out  hover:border-white focus-visible:border-white'
 		>
 			<Image
 				imgUrl={PortalLogo}

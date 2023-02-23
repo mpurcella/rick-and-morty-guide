@@ -56,7 +56,7 @@ const Header = () => {
 		}
 	];
 	return (
-		<header className='sticky top-0 left-0 z-50 bg-black-300 px-40 py-20 shadow-lg shadow-black-100/30'>
+		<header className='sticky top-0 left-0 z-50 bg-black-300 px-40 py-20 shadow-lg shadow-black-200/20'>
 			<nav className='m-auto flex items-center justify-between lg:max-w-screen-lg'>
 				<Link
 					to='/'

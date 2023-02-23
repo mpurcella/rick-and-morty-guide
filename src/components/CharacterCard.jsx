@@ -5,7 +5,7 @@ import classNames from 'classnames';
 const CharacterCard = ({ imgUrl, alt, status }) => {
 	return (
 		<div
-			className={classNames('rounded-lg shadow-lg shadow-black-100/30', {
+			className={classNames('rounded-lg shadow-lg shadow-black-200/20', {
 				'bg-green': status === 'Alive',
 				'bg-red': status === 'Dead',
 				'bg-black-200': status === 'unknown'

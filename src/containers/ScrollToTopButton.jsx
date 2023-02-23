@@ -31,7 +31,7 @@ const ScrollToTopButton = () => {
 	return (
 		<button
 			className={classNames(
-				'fixed bottom-20 right-1/2 flex h-60 w-60 translate-x-1/2 items-center justify-center rounded-lg border border-white bg-white text-24 text-black-200 shadow-lg shadow-black-100/30 outline-none duration-200 ease-out hover:border-white hover:bg-black-200 hover:text-white focus-visible:border-white focus-visible:bg-black-200 focus-visible:text-white lg:right-20 lg:translate-x-0',
+				'fixed bottom-20 right-1/2 flex h-60 w-60 translate-x-1/2 items-center justify-center rounded-lg border border-white bg-white text-24 text-black-200 shadow-lg shadow-black-200/20 outline-none duration-200 ease-out hover:border-white hover:bg-black-200 hover:text-white focus-visible:border-white focus-visible:bg-black-200 focus-visible:text-white lg:right-20 lg:translate-x-0',
 				{
 					'opacity-100': isVisible,
 					'opacity-0': !isVisible
