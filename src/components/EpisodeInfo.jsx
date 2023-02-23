@@ -39,7 +39,9 @@ const EpisodeInfo = ({ name, episode, date, characters, isLoaded }) => {
 	return (
 		<div className='flex flex-col divide-y-2 divide-black-100/20'>
 			<div className='flex flex-col items-center gap-28 pb-40'>
-				<h1 className='text-28 font-black uppercase leading-none md:text-32'>"{name}"</h1>
+				<h1 className='text-center text-28 font-black uppercase leading-none md:text-32'>
+					"{name}"
+				</h1>
 				<p className='text-14'>{episode}</p>
 				<p>
 					<span className='font-semibold'>Premiere Date:</span> {date}

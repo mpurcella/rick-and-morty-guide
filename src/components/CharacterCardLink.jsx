@@ -16,7 +16,9 @@ const CharacterCardLink = ({ url, imgUrl, alt, name }) => {
 				lg:group-focus-visible:rounded-b-lg lg:group-focus-visible:opacity-8'
 			/>
 			<div className='px-12 py-16 duration-200 ease-out lg:absolute lg:top-0 lg:left-0 lg:flex lg:h-full lg:w-full lg:items-center lg:justify-center lg:opacity-0 lg:group-hover:opacity-100 lg:group-focus-visible:opacity-100'>
-				<p className='text-center font-medium leading-tight text-white'>{name}</p>
+				<p className='text-center font-medium leading-tight duration-200 ease-out group-hover:text-white group-focus-visible:text-white'>
+					{name}
+				</p>
 			</div>
 		</Link>
 	);
