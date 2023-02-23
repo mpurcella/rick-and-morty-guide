@@ -20,7 +20,7 @@ const Characters = () => {
 
 			try {
 				const response = await axios.get(
-					`https://rickandmortyapi.com/api/characte?page=${pageNumber}`
+					`https://rickandmortyapi.com/api/character?page=${pageNumber}`
 				);
 				setCharacters((prevCharacters) => {
 					return [...prevCharacters, ...response.data.results];
