@@ -3,16 +3,16 @@ import RickAndMortyUpset from '../images/rickandmortyupset.png';
 
 const LoadingError = () => {
 	return (
-		<section className='m-auto flex h-full w-250 flex-col justify-center lg:w-400 '>
+		<div className='m-auto flex h-full flex-col items-center justify-center'>
 			<img
 				src={RickAndMortyUpset}
 				alt='Rick and Morty Upset'
-				className='w-full'
+				className='w-250 md:w-400'
 			/>
-			<p className='text-center font-semibold uppercase lg:text-14'>
+			<p className='text-center font-semibold uppercase md:text-24'>
 				Aw, geez. Something went&nbsp;wrong.
 			</p>
-		</section>
+		</div>
 	);
 };
 
