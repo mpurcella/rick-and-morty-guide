@@ -102,7 +102,6 @@ module.exports = {
 					'@apply font-open-sans bg-blue text-black-200 antialiased leading-normal': {}
 				}
 			});
-		},
-		require('postcss-100vh-fix')
+		}
 	]
 };
