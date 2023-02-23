@@ -11,11 +11,15 @@ const EpisodeInfo = ({ name, episode, date, characters, isLoaded }) => {
 		setIsLoading(true);
 		setError(false);
 
-		Promise.all(characters.map((character) => fetch(character)))
-			.then((responses) => {
-				return Promise.all(responses.map((response) => response.json()));
-			})
-			.then((data) => setCharacterData(data));
+		if (isLoaded) {
+			Promise.all(characters.map((character) => fetch(character)))
+				.then((responses) => {
+					return Promise.all(responses.map((response) => response.json()));
+				})
+				.then((data) => setCharacterData(data));
+		} else {
+			return;
+		}
 
 		// characters.map((character) => {
 		// 	const getCharacterData = async () => {

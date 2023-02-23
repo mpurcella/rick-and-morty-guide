@@ -24,11 +24,15 @@ const CharacterInfo = ({
 		setIsLoading(true);
 		setError(false);
 
-		Promise.all(episodes.map((episode) => fetch(episode)))
-			.then((responses) => {
-				return Promise.all(responses.map((response) => response.json()));
-			})
-			.then((data) => setEpisodeData(data));
+		if (isLoaded) {
+			Promise.all(episodes.map((episode) => fetch(episode)))
+				.then((responses) => {
+					return Promise.all(responses.map((response) => response.json()));
+				})
+				.then((data) => setEpisodeData(data));
+		} else {
+			return;
+		}
 
 		// episodes.map((episode) => {
 		// 	const getEpisodeData = async () => {
