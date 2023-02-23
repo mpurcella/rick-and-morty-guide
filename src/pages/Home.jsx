@@ -3,8 +3,10 @@ import Hero from '../components/Hero';
 
 const Home = () => {
 	return (
-		<div className='h-[calc(100vh-76px)]'>
-			<Hero />
+		<div className='absolute inset-0'>
+			<div className='h-screen'>
+				<Hero />
+			</div>
 		</div>
 	);
 };
